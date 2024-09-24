@@ -29,3 +29,23 @@ This project is a Movie List App built with React Native and Expo. It features i
 ```bash
 git clone https://github.com/your-username/movie-list-app.git
 ```
+
+- Navigate into the project directory:
+
+```bash
+cd movie-list-appt
+```
+
+- Install the dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+- Start the Expo server:
+
+```bash
+expo start
+```
