@@ -10,12 +10,12 @@ Optimized Performance: Reduced unnecessary re-renders and optimized data fetchin
 
 # Screenshots
 
-![](./assets/1.png)
-![](./assets/2.png)
-![](./assets/3.png)
-![](./assets/4.png)
-![](./assets/5.png)
-![](./assets/6.png)
+![](./assets/images/1.png)
+![](./assets/images/2.png)
+![](./assets/images/3.png)
+![](./assets/images/4.png)
+![](./assets/images/5.png)
+![](./assets/images/6.png)
 
 # Installation
 
