@@ -44,6 +44,12 @@ npm install
 yarn install
 ```
 
+- Create a .env file in the root of the project and add your TMDB API key:
+
+```bash
+TMDB_API_KEY=your_api_key_here
+```
+
 - Start the Expo server:
 
 ```bash
