@@ -12,13 +12,13 @@ This project is a Movie List App built with React Native and Expo. It features i
 
 <div>
   <div style="display: flex;">
-    <img src="./assets/images/1.png" alt="Screenshot 1" width="300" style="margin:10px;"/>
-    <img src="./assets/images/2.png" alt="Screenshot 2" width="300" style="margin:10px;"/>
-    <img src="./assets/images/3.png" alt="Screenshot 3" width="300" style="margin:10px;"/>
+    <img src="./assets/images/1.png" alt="Screenshot 1" width="200" style="margin:10px;"/>
+    <img src="./assets/images/2.png" alt="Screenshot 2" width="200" style="margin:10px;"/>
+    <img src="./assets/images/3.png" alt="Screenshot 3" width="200" style="margin:10px;"/>
   </div>
   <div style="display: flex;">
-    <img src="./assets/images/4.png" alt="Screenshot 4" width="300" style="margin:10px;"/>
-    <img src="./assets/images/5.png" alt="Screenshot 5" width="300" style="margin:10px;"/>
+    <img src="./assets/images/4.png" alt="Screenshot 4" width="200" style="margin:10px;"/>
+    <img src="./assets/images/5.png" alt="Screenshot 5" width="200" style="margin:10px;"/>
   </div>
 </div>
 
