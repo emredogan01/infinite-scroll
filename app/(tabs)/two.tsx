@@ -1,14 +1,45 @@
-import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
+import { ActivityIndicator, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
+import { useQuery } from "@tanstack/react-query";
+import MovieCard from "@/components/MovieCard";
+import { getWatchListMovies } from "@/api/watchList";
+import useFilterStore from "@/state/filterStore";
+import { FlatList } from "react-native";
+import { Movie } from "@/types";
 
 export default function TabTwoScreen() {
+  const { language } = useFilterStore();
+
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["watchList"],
+    queryFn: () => getWatchListMovies(language),
+  });
+
+  if (error) {
+    return (
+      <View style={styles.container}>
+        <Text>{error.message}</Text>
+      </View>
+    );
+  }
+  if (isLoading) {
+    return (
+      <View style={styles.container}>
+        <ActivityIndicator size={50} color={"black"} />
+      </View>
+    );
+  }
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/two.tsx" />
+    <View style={styles.listContainer}>
+      <FlatList
+        initialNumToRender={6}
+        data={data}
+        numColumns={2}
+        renderItem={({ item }) => <MovieCard movie={item} />}
+        keyExtractor={(item: Movie) => item.id.toString()}
+        onEndReachedThreshold={0.5}
+      />
     </View>
   );
 }
@@ -16,16 +47,10 @@ export default function TabTwoScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+  listContainer: {
+    flex: 1,
   },
 });
