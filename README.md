@@ -10,12 +10,14 @@ Optimized Performance: Reduced unnecessary re-renders and optimized data fetchin
 
 # Screenshots
 
-![](./assets/images/1.png)
-![](./assets/images/2.png)
-![](./assets/images/3.png)
-![](./assets/images/4.png)
-![](./assets/images/5.png)
-![](./assets/images/6.png)
+<div>
+  <img src="./assets/images/1.png" alt="Screenshot 1" width="300" style="display:inline-block; margin:10px;"/>
+  <img src="./assets/images/2.png" alt="Screenshot 2" width="300" style="display:inline-block; margin:10px;"/>
+  <img src="./assets/images/3.png" alt="Screenshot 3" width="300" style="display:inline-block; margin:10px;"/>
+  <img src="./assets/images/4.png" alt="Screenshot 4" width="300" style="display:inline-block; margin:10px;"/>
+  <img src="./assets/images/5.png" alt="Screenshot 5" width="300" style="display:inline-block; margin:10px;"/>
+  <img src="./assets/images/6.png" alt="Screenshot 6" width="300" style="display:inline-block; margin:10px;"/>
+</div>
 
 # Installation
 
